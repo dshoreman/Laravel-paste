@@ -1,10 +1,19 @@
 #!/usr/bin/python
-import sublime, sublime_plugin, urllib, urllib2
+import sublime, sublime_plugin, urllib
+try:
+    from urllib.request import urlopen
+    import urllib.parse
+except ImportError:
+    from urllib2 import urlopen
 
 class PastelaravelCommand(sublime_plugin.TextCommand):
 	def send_to_paste(self, body):
-		data = urllib.urlencode( { 'paste' : body } ).encode('utf-8')
-		http_file = urllib2.urlopen('http://paste.laravel.com/', data)
+		try:
+			data = urllib.urlencode( { 'paste' : body } ).encode('utf-8')
+		except AttributeError:
+			data = urllib.parse.urlencode( { 'paste' : body } ).encode('utf-8')
+
+		http_file = urlopen('http://paste.laravel.com/', data)
 		return http_file
 
 	def run(self, edit):

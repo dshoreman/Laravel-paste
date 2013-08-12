@@ -1,0 +1,1 @@
+This plugin works in Sublime Text 3

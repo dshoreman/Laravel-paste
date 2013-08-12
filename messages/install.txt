@@ -1,0 +1,7 @@
+Thanks for installing Laravel Paste!
+
+The only thing you have to do is, select your code, right click and Paste to laravel.com
+Url is copied to your clipboard :D
+
+Cheers,
+Robin
