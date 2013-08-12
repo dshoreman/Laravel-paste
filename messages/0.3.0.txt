@@ -1,0 +1,2 @@
+The filename will be at the top, standard key-bindings are set to
+ Super + Alt + p

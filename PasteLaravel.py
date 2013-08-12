@@ -18,6 +18,7 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
 
     def get_text(self):
         text = "";
+        selection = 1;
 
         for region in self.view.sel():
 
@@ -26,15 +27,26 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
                 if text != "":
                     text += os.linesep + os.linesep + os.linesep
 
+                text += "// Selection: " + str(selection) + os.linesep
                 text += self.view.substr(sublime.Region(region.begin(), region.end()))
+                selection += 1
 
         if text != "":
             return text
         else:
             return self.view.substr(sublime.Region(0, self.view.size()))
 
+    def get_file_name(self):
+        filename = self.view.file_name()
+        if not filename is None:
+            filenames = filename.split('/')
+            return '// Filename: ' + filenames[-1] + os.linesep
+        else:
+            return '// Filename: (empty)' + os.linesep
+
     def run(self, edit):
-        body = self.get_text()
+        body = self.get_file_name();
+        body += self.get_text()
         res = self.send_to_paste(body)
         url = res.geturl()
         sublime.set_clipboard(url)
