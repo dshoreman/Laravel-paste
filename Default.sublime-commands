@@ -1,5 +1,19 @@
 [
     {
+        "caption": "Preferences: PasteLaravel Settings – Default",
+        "command": "open_file",
+        "args": {
+            "file": "${packages}/PasteLaravel/PasteLaravel.sublime-settings"
+        }
+    },
+    {
+        "caption": "Preferences: PasteLaravel Settings – User",
+        "command": "open_file",
+        "args": {
+            "file": "${packages}/User/PasteLaravel.sublime-settings"
+        }
+    },
+    {
         "caption": "Preferences: PasteLaravel Key Bindings – Default",
         "command": "open_file",
         "args": {

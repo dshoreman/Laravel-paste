@@ -1,0 +1,3 @@
+Now you can change some settings:
++ Open the paste in your browser
++ Add a signature at the end of your paste
