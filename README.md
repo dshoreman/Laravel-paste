@@ -38,4 +38,5 @@ I'm using Sublime 2 and it works like a charm, works in Sublime 3
 ## Updates ##
 
 Now you have some settings, You can add a signature which will be added at the bottom.
+
 Also, the ability to open the url in your browser
