@@ -1,6 +1,6 @@
 [
     {
-        "caption": "Paste to paste.laravel.com",
+        "caption": "Send to Laravel Paste",
         "command": "pastelaravel"
     }
 ]
