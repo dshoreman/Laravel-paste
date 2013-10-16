@@ -1,8 +1,8 @@
 Paste To Laravel.com
 --------------------
 
-This [SublimeText2](http://www.sublimetext.com/2) package allows to highlight &
-post the code to [Paste](http://paste.laravel.com).
+This [Sublime Text](http://www.sublimetext.com/) package allows to highlight &
+post the code to [Paste](http://paste.laravel.com). Supports both ST2 and ST3.
 
  * The syntax will be posted
  * The url will be copied to your clipboard
@@ -11,13 +11,9 @@ post the code to [Paste](http://paste.laravel.com).
 
 ### With Package Control ###
 
-Using the show command palette command (the default is `command+shift+p` on Mac, and `ctrl+shift+p` on Windows), use Package Control: Install Package. The package is listed as `Paste Laravel` in the packages list.
+Using the command palette (the default is `command+shift+p` on Mac, and `ctrl+shift+p` on Windows), use `Package Control: Install Package`. The package is listed as `Paste Laravel` in the packages list.
 
 ### Without Package Control ###
-
-~~This package is not (yet) in wbond's package control repository, so you gotta use Terminal and git to install it.~~
-
-I'm using Sublime 2 and it works like a charm, works in Sublime 3
 
 #### Mac OS ####
 
