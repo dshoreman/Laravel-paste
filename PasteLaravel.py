@@ -42,7 +42,7 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
             filenames = filename.split('/')
             return '// Filename: ' + filenames[-1] + os.linesep
         else:
-            return '// Filename: (empty)' + os.linesep
+            return ''
 
     def get_information(self):
         show_paste_by = self.get_setting("show_paste_by")
