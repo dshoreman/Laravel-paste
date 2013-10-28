@@ -1,0 +1,2 @@
+New version!
+Line seperator now works in all the OS's :)
