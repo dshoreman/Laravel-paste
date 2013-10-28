@@ -28,6 +28,7 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
                     text += os.linesep + os.linesep + os.linesep
 
                 text += "// Selection: " + str(selection) + os.linesep
+
                 text += self.view.substr(sublime.Region(region.begin(), region.end()))
                 selection += 1
 
@@ -39,7 +40,7 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
     def get_file_name(self):
         filename = self.view.file_name()
         if not filename is None:
-            filenames = filename.split('/')
+            filenames = filename.split(os.sep)
             return '// Filename: ' + filenames[-1] + os.linesep
         else:
             return '// Filename: (empty)' + os.linesep
