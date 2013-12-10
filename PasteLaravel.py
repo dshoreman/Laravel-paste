@@ -27,7 +27,9 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
                 if text != "":
                     text += os.linesep + os.linesep + os.linesep
 
-                text += "// Selection: " + str(selection) + os.linesep
+                show_section_comments = self.get_setting("show_section_comments")
+                if (show_section_comments == True):
+                    text += "// Selection: " + str(selection) + os.linesep
 
                 text += self.view.substr(sublime.Region(region.begin(), region.end()))
                 selection += 1
@@ -67,7 +69,11 @@ class PastelaravelCommand(sublime_plugin.TextCommand):
             return s.get(key)
 
     def run(self, edit):
-        body = self.get_file_name()
+        body = ''
+        show_file_name = self.get_setting("show_file_name")
+        if (show_file_name == True):
+            body += self.get_file_name()
+
         body += self.get_text()
         body += self.get_signature()
         body += self.get_information()
