@@ -1,2 +1,1 @@
-Toggle Filename and Section commands
-Update made for Mrogne! ^^
+Toggle Filename and Section comments
