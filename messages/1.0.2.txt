@@ -1,0 +1,4 @@
+Updated the plugin URL to http://paste.jesse-obrien.ca/ because Taylor took down paste.laravel.com
+The reason for it was spam and bank account data stored on it, so jesse's paster deletes everything 12.00 EST everyday
+
+Greetz!
