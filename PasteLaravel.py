@@ -9,11 +9,11 @@ except ImportError:
 class PastelaravelCommand(sublime_plugin.TextCommand):
     def send_to_paste(self, body):
         try:
-            data = urllib.urlencode( { 'paste' : body, 'emp_tee': '' } ).encode('utf-8')
+            data = urllib.urlencode( { 'code' : body } ).encode('utf-8')
         except AttributeError:
-            data = urllib.parse.urlencode( { 'paste' : body, 'emp_tee': '' } ).encode('utf-8')
+            data = urllib.parse.urlencode( { 'code' : body } ).encode('utf-8')
 
-        http_file = urlopen('http://paste.jesse-obrien.ca/', data)
+        http_file = urlopen('http://laravel.io/bin', data)
         return http_file
 
     def get_text(self):

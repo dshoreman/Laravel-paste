@@ -1,0 +1,5 @@
+Plugin has been updated, the URL has been changed to the great laravel.io platform!
+
+Thanks to the laravel.io team!
+
+Hope you enjoy!
