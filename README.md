@@ -1,8 +1,8 @@
-Paste To Laravel.com
+Paste To Laravel.IO
 --------------------
 
 This [SublimeText2](http://www.sublimetext.com/2) package allows to highlight &
-post the code to [Paste](http://paste.laravel.com).
+post the code to [Paste](http://laravel.io/bin).
 
  * The syntax will be posted
  * The url will be copied to your clipboard
